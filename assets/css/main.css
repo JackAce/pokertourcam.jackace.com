@@ -1,0 +1,106 @@
+body {
+    font-family: Arial;
+    color: #fff;
+    background-color: #191;
+}
+
+.cellLayout {
+    vertical-align: top;
+}
+
+.photoCanvas {
+    position: fixed;
+    left: 300px;
+    top: 50px;
+    background-color: #0f0;
+    width: 1280px;
+    height: 720px;
+}
+
+.overlay-player-1 {
+    position: fixed;
+    top: 450px;
+    left: 330px;
+    width: 200px;
+    z-index: 100;
+}
+
+.overlay-player-2 {
+    position: fixed;
+    top: 600px;
+    left: 330px;
+    width: 200px;
+    z-index: 200;
+}
+.player-name-1 {
+    position: fixed;
+    left: 340px;
+    top: 497px;
+    color: #000;
+    font-weight: bold;
+    z-index: 200;
+}
+.player-position-1 {
+    position: fixed;
+    left: 488px;
+    top: 497px;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 200;
+}
+
+.player-name-2 {
+    position: fixed;
+    left: 340px;
+    top: 647px;
+    color: #000;
+    font-weight: bold;
+    z-index: 200;
+}
+.player-position-2 {
+    position: fixed;
+    left: 488px;
+    top: 647px;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 200;
+}
+
+.player-container {
+    width: 200px;
+    z-index: 100;
+}
+.player-container-3 {
+    position: fixed;
+    top: 450px;
+    left: 630px;
+}
+.player-container-4 {
+    position: fixed;
+    top: 600px;
+    left: 630px;
+}
+.overlay-player {
+    width: 200px;
+    z-index: 200;
+}
+.player-name {
+    position: relative;
+    left: 10px;
+    top: -57px;
+    color: #000;
+    font-weight: bold;
+    z-index: 200;
+}
+.player-position {
+    position: relative;
+    left: 120px;
+    top: -57px;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 300;
+}
+

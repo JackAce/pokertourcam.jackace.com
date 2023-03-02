@@ -1,0 +1,109 @@
+---
+title: Lotto EV Calculator - JackAce.com
+---
+<html>
+    <head>
+        <title>{{-site.title-}}</title>
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="/assets/js/pokerhand.min.js"></script> -->
+        <script src="/assets/js/pokersolver.js"></script>
+        <script src="/assets/js/pokertourcam.js"></script>
+        {%- if jekyll.environment == 'production' and site.google_analytics -%}
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{-site.google_analytics-}}"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '{{-site.google_analytics-}}');
+            </script>
+        {%- endif -%}
+        {%- if jekyll.environment == 'production' and site.google_adsense -%}
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_adsense }}" crossorigin="anonymous"></script>
+        {%- endif -%}
+    </head>
+    <body>
+      <div id="mainDiv">
+
+        <table>
+          <tr>
+            <td>
+              
+            </td>
+            <td>
+              Canvas
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td class="cellLayout">
+                    Player 1:
+                  </td>
+                  <td class="cellLayout">
+                    <input type="text" value="Ivey" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cellLayout">
+                    Cards:
+                  </td>
+                  <td class="cellLayout">
+                    <img src="/assets/img/cards/Kd_2500x3500.png" width="50" />
+                    <img src="/assets/img/cards/Kc_2500x3500.png" width="50" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cellLayout">
+                    Player 2:
+                  </td>
+                  <td class="cellLayout">
+                    <input type="text" value="Hayes" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cellLayout">
+                    Cards:
+                  </td>
+                  <td class="cellLayout">
+                    <img src="/assets/img/cards/Js_2500x3500.png" width="50" />
+                    <img src="/assets/img/cards/As_2500x3500.png" width="50" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div id="photoCanvas" class="photoCanvas" >
+                <img src="/assets/img/overlays/overlay-player-666x344.png" class="overlay-player-1" />
+                <div class="player-name-1">IVEY</div>
+                <div class="player-position-1">HJ</div>
+
+                <div>
+                  <img src="/assets/img/overlays/overlay-player-red-666x344.png" class="overlay-player-2" />
+                  <span class="player-name-2">HAYES</span>
+                  <span class="player-position-2">CUT</span>
+                </div>
+
+                <div class="player-container player-container-3">
+                  <img src="/assets/img/overlays/overlay-player-red-666x344.png" class="overlay-player" />
+                  <span class="player-name">IVEY</span>
+                  <span class="player-position">BTN</span>
+                </div>
+
+                <div class="player-container player-container-4">
+                  <img src="/assets/img/overlays/overlay-player-red-666x344.png" class="overlay-player" />
+                  <span class="player-name">HAYES</span>
+                  <span class="player-position">BTN</span>
+                </div>
+
+              </div>           
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </body> 
+</html>
